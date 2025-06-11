@@ -1,0 +1,59 @@
+/* Main layout */
+.sidebar {
+  position: sticky;
+  top: 56px;
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+  padding-top: 1rem;
+}
+
+/* Table styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Card styles */
+.card {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Form styles */
+.form-control:focus, .form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Image styles */
+.img-thumbnail {
+  border-radius: 0.5rem;
+}
+
+/* Badge styles */
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+}
+
+/* Button styles */
+.btn-outline-primary:hover, .btn-primary:hover {
+  background-color: #0a58ca;
+  border-color: #0a58ca;
+}
+
+/* Utility classes */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+}
