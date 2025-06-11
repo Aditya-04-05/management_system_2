@@ -76,7 +76,7 @@ if (process.env.NODE_ENV === "production") {
   console.log("Setting up production static file serving...");
   try {
     // Set static folder
-    const clientBuildPath = path.join(__dirname, "../client/");
+    const clientBuildPath = path.join(__dirname, "../client/build");
     if (fs.existsSync(clientBuildPath)) {
       app.use(express.static(clientBuildPath));
       console.log("Serving static files from:", clientBuildPath);
